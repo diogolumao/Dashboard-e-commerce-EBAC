@@ -1,0 +1,238 @@
+/* --- Reset e Base --- */
+body {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container Principal */
+.main-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    background-color: #00BFA5;
+    color: #121212;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0,255,165, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #121212;
+}
+
+.header p {
+    margin-top: 10px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* --- Filtros Globais --- */
+.global-controls {
+    display: flex;
+    gap: 20px;
+    background-color: #252525;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.control-item {
+    flex: 1;
+}
+
+.control-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #00BFA5;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+/* --- KPIs --- */
+.kpi-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.kpi-card {
+    background: #252525;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 3px solid #00BFA5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.kpi-title {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.kpi-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* --- Gráficos (Grid System) --- */
+.chart-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+    align-items: start; /* Importante para evitar esticamento vertical */
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.graph-container {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Evita que conteúdo estoure o container */
+}
+
+/* Filtro Específico */
+.local-filter {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+/* --- Rodapé Profissional (Ajustado) --- */
+.footer-professional {
+    background-color: #151515;
+    padding: 60px 0 20px;
+    border-top: 1px solid #00BFA5;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* MANTÉM AS MESMAS MEDIDAS DO CONTAINER PRINCIPAL PARA ALINHAR PERFEITAMENTE */
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    align-items: start;
+}
+
+/* Coluna 1 (Sobre): Alinha à Esquerda (Padrão) */
+.footer-col:nth-child(1) {
+    text-align: left;
+}
+
+/* Coluna 2 (Links): Centraliza visualmente */
+.footer-col:nth-child(2) {
+    text-align: center;
+}
+
+/* Coluna 3 (Contato): Alinha à Direita para fechar com a borda dos gráficos */
+.footer-col:nth-child(3) {
+    text-align: right;
+}
+
+.footer-col h3 {
+    color: #00BFA5;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col p {
+    color: #888;
+    line-height: 1.6;
+    font-size: 0.9em;
+    margin: 5px 0; /* Pequeno ajuste de margem */
+}
+
+/* Ajustes nos Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Permite centralizar o bloco */
+    text-align: left; /* Mantém o texto dos links alinhado entre si */
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #00BFA5;
+    padding-left: 5px; /* Efeito hover sutil */
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    color: #555;
+    font-size: 0.85em;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Vira uma coluna só no celular */
+        text-align: center; /* Centraliza tudo no celular */
+    }
+    
+    /* No celular, removemos os alinhamentos específicos para centralizar tudo */
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* Dash Fixes */
+.Select-control, .Select-menu-outer {
+    background-color: #333 !important;
+    border-color: #444 !important;
+}
+.Select-value-label, .Select-option {
+    color: #fff !important;
+}
+.Select-placeholder { color: #aaa !important; }

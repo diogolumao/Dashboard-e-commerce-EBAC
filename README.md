@@ -82,14 +82,20 @@ python app.py
 5. Acesse no navegador
 O terminal exibirá um endereço local. Geralmente, acesse: http://127.0.0.1:8050/
 
-📊 Prévia da Aplicação
-(Dica: Tire um print da sua tela finalizada e coloque o link da imagem aqui depois que subir no GitHub, ex: ![Dashboard Screenshot](assets/print.png))
 
-✒️ Autor
-Diogo Alves Azevedo Analista de Dados em Formação | Desenvolvedor Python
+### 👨‍💻 Autor
 
-💼 LinkedIn
+<a href="https://diogolumao.com.br">
+ <img style="border-radius: 50%;" src="https://github.com/diogolumao.png" width="100px;" alt=""/>
+</a>
 
-🌐 Portfólio
+<br />
+
+**Diogo Alves** *Analista de Dados & Analytics Engineer*
+
+Entre em contato:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diogoalves-dados/)
+[![Portfólio](https://img.shields.io/badge/Portfólio-Website-black?style=for-the-badge&logo=vercel&logoColor=white)](https://diogolumao.com.br)
 
 Desenvolvido com 💙 e Python.

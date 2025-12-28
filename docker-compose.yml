@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app-ecommerce:
+    build: .
+    container_name: ecommerce_dashboard
+    restart: always
+    environment:
+      - TZ=America/Sao_Paulo  # Fuso horário BR
+    expose:
+      - "8050"  # Porta interna do Container (Gunicorn)
+    volumes:
+      - ./:/app  # Mapeia a pasta atual para facilitar edições rápidas sem rebuild
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    networks:
+      - rede_interna
+
+# Rede externa (Obrigatório: O Nginx Proxy Manager deve estar nesta mesma rede)
+networks:
+  rede_interna:
+    external: true

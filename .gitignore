@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# IDE settings (VSCode, Pycharm)
+.vscode/
+.idea/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
